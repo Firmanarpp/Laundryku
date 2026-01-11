@@ -731,8 +731,8 @@ lib/
 
 ## 👨‍💻 Developer
 
-Developed by: [Your Name]  
-University: [Your University]  
+Developed by: [Firman Naufal Aryaputra]  
+University: [Universitas Dian Nuswantoro]  
 Semester: 7  
 Course: Mobile Development
 
