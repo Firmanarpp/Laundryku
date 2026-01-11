@@ -88,24 +88,42 @@
 ## 📸 Screenshot Demo
 
 ### 1. Order Management Screen
+
 ![Order Management](screenshots/1_order_management.png)
-*Halaman utama untuk melihat dan mengelola semua pesanan laundry*
+
+**Deskripsi:** Halaman utama untuk melihat dan mengelola semua pesanan laundry
+
+---
 
 ### 2. Add Order Screen
+
 ![Add Order](screenshots/2_add_order.png)
-*Form untuk menambahkan pesanan baru dengan pilih pelanggan dan detail layanan*
+
+**Deskripsi:** Form untuk menambahkan pesanan baru dengan pilih pelanggan dan detail layanan
+
+---
 
 ### 3. Order Detail Screen
+
 ![Order Detail](screenshots/3_order_detail.png)
-*Detail pesanan dengan opsi update status, upload foto, dan notifikasi pickup*
+
+**Deskripsi:** Detail pesanan dengan opsi update status, upload foto, dan notifikasi pickup
+
+---
 
 ### 4. Payment Screen
+
 ![Payment](screenshots/4_payment.png)
-*Manajemen pembayaran dengan form input dan riwayat transaksi*
+
+**Deskripsi:** Manajemen pembayaran dengan form input dan riwayat transaksi
+
+---
 
 ### 5. Analytics Screen
+
 ![Analytics](screenshots/5_analytics.png)
-*Dashboard analitik dengan grafik pendapatan dan statistik bisnis*
+
+**Deskripsi:** Dashboard analitik dengan grafik pendapatan dan statistik bisnis
 
 ---
 
@@ -659,27 +677,6 @@ Future<String> uploadOrderPhoto(String orderId, File imageFile)
 **Response:**
 ```
 https://[project].supabase.co/storage/v1/object/public/order-photos/order_123_1736505600.jpg
-```
-
----
-
-### 🔔 WhatsApp Integration
-
-#### Send Pickup Notification
-```dart
-Future<void> sendWhatsAppNotification(String phone, String customerName, String orderId)
-```
-**Implementation:**
-```dart
-final url = 'https://wa.me/$phone?text=${Uri.encodeComponent(message)}';
-await launchUrl(Uri.parse(url));
-```
-
-**Message Template:**
-```
-Halo [Customer Name]!
-Pesanan laundry Anda (Order #[Order ID]) sudah selesai dan siap untuk diambil.
-Terima kasih telah menggunakan layanan LaundryKu! 🧺
 ```
 
 ---
